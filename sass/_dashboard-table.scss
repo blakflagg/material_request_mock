@@ -1,0 +1,46 @@
+.container-table {
+  display: flex;
+  width: 90%;
+}
+
+// Main container - row container
+.table-row {
+  text-decoration: none;
+  display: flex;
+  display: -webkit-flex;
+  flex-direction: row;
+  -webkit-flex-direction: row;
+  flex-wrap: no-wrap;
+  -webkit-flex-wrap: no-wrap;
+  width: 100%;
+  justify-content: space-between;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 1rem;
+}
+
+.table-row {
+  border-bottom: 1px solid #e0e0e0;
+  border-collapse: collapse;
+  padding-top: .5rem;
+  padding-bottom: .5rem;
+
+  &-header {
+    background-color: $color-primary;
+    font-weight: bold;
+    padding-top: 6px;
+    padding-bottom: 6px;
+  }
+}
+
+.req_num {
+  flex: 1;
+  text-decoration: none;
+}
+
+.req_date {
+  flex: 2;
+}
+.req_status {
+  flex: 2;
+}
